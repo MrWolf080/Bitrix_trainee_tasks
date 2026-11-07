@@ -1,0 +1,37 @@
+/* Шаблон bitrix:news.list: новость в стиле детальной страницы макета */
+@font-face{font-family:Gilroy;src:url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Bold.woff2) format("woff2"),url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:Gilroy;src:url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Extrabold.woff2) format("woff2"),url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Extrabold.woff) format("woff");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:Gilroy;src:url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Medium.woff2) format("woff2"),url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Medium.woff) format("woff");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Gilroy;src:url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Regular.woff2) format("woff2"),url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Gilroy;src:url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Light.woff2) format("woff2"),url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/Gilroy-Light.woff) format("woff");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Gotham Pro";src:url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/GothamPro.woff2) format("woff2"),url(/local/templates/.default/components/bitrix/news/tasks_news/fonts/GothamPro.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+.article-rows,.article-rows *{box-sizing:border-box}
+.article-rows{font-family:Gilroy,"Sans Serif";font-weight:300;color:#172c5f;padding:0 4.16667vw}
+.article-row{padding-bottom:80px;margin-bottom:80px;border-bottom:1px solid #bdd5f7}
+.article-row:last-of-type{border-bottom:none;margin-bottom:0}
+.article-row__title{width:54.16671vw;max-width:100%;font-size:25px;color:#172c5f;line-height:1.5;margin-bottom:20px}
+.article-row__title a,.article-row__title a:hover{color:inherit;text-decoration:none}
+.article-row__date{font-size:14px;color:rgba(23,44,95,.5);line-height:1.7;margin-bottom:20px}
+.article-row__content{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.article-row__image{width:29.16669vw}
+.article-row__image a{display:block}
+.article-row__image img{width:100%;height:100%;object-fit:cover;display:block}
+.article-row__text{width:58.33338vw}
+.article-row__button{position:relative;display:inline-block;font-size:12px;font-family:"Gotham Pro";color:#172c5f;text-transform:uppercase;margin-top:20px;text-decoration:none}
+.article-row__button:hover{color:#172c5f;text-decoration:none}
+.article-row__button:before{content:"";position:absolute;left:0;right:0;bottom:-4px;width:100%;height:1px;background:#172c5f}
+.article-rows .block-content p{font-size:14px;font-weight:300;line-height:1.7;margin:0}
+.article-rows .block-content p:not(:last-of-type){margin-bottom:37px}
+.article-rows .modern-page-navigation{margin:40px 0 0;font-size:16px}
+.article-rows .modern-page-navigation a,.article-rows .modern-page-navigation span{display:inline-block;padding:0 12px;line-height:43px;color:#172c5f}
+.article-rows .modern-page-navigation .modern-page-current{border-bottom:1px solid #000}
+@media (min-width:1200px){
+  .article-row__title{font-size:50px;margin-bottom:40px}
+  .article-row__date{font-size:20px;margin-bottom:40px}
+  .article-row__button{margin-top:40px}
+  .article-rows .block-content p{font-size:20px}
+}
+@media (max-width:767px){
+  .article-row__title,.article-row__text,.article-row__image{width:100%}
+  .article-row__image{margin-bottom:30px}
+}
